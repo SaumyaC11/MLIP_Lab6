@@ -15,8 +15,8 @@ pipeline {
                 bat '''
                 echo 'Test Step: We run testing tool like pytest here'
 
-                // TODO fill out the path to conda here
-                // sudo /PATH/TO/CONDA init
+                REM TODO fill out the path to conda here
+                REM sudo /PATH/TO/CONDA init
                 source .venv/bin/activate
 
                 // TODO Complete the command to run pytest
@@ -24,8 +24,8 @@ pipeline {
                 pytest tests/ --junitxml=report.xml
 
                 echo 'Test Completed'
-                // echo 'pytest not runned'
-                // exit 1 #comment this line after implementing Jenkinsfile
+                REM echo 'pytest not runned'
+                REM exit 1 #comment this line after implementing Jenkinsfile
                 '''
 
             }
