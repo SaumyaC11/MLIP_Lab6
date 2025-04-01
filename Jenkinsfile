@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat '''#!/bin/bash
+                bat '''
                 echo 'In C or Java, we can compile our program in this step'
                 echo 'In Python, we can build our package here or skip this step'
                 '''
@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh '''#!/bin/bash
+                bat '''
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
