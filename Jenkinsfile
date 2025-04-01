@@ -17,10 +17,10 @@ pipeline {
 
                 REM TODO fill out the path to conda here
                 REM sudo /PATH/TO/CONDA init
-                source .venv/bin/activate
+                call .venv/bin/activate
 
-                // TODO Complete the command to run pytest
-                // sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
+                REM TODO Complete the command to run pytest
+                REM sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
                 pytest tests/ --junitxml=report.xml
 
                 echo 'Test Completed'
