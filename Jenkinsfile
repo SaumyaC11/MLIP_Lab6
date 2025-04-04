@@ -27,7 +27,7 @@ pipeline {
                 bat '''
                 call .venv\\Scripts\\activate
                 echo "Test Step: Running pytest..."
-                pytest tests/ --junitxml=report.xml
+                pytest . --junitxml=report.xml
                 echo "Test Completed"
                 '''
             }
