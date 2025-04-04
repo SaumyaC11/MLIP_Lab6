@@ -10,6 +10,7 @@ pipeline {
                 call .venv\\Scripts\\activate
                 pip install --upgrade pip
                 pip install pytest
+                pip install -r requirements.txt
                 '''
             }
         }
